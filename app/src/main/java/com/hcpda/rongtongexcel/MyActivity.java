@@ -14,7 +14,6 @@ import android.speech.tts.TextToSpeech;
 import android.support.v4.app.ActivityCompat;
 import android.support.v4.content.ContextCompat;
 import android.support.v7.app.AppCompatActivity;
-import android.util.Log;
 import android.view.KeyEvent;
 import android.view.View;
 import android.widget.AdapterView;
@@ -78,6 +77,7 @@ public class MyActivity extends AppCompatActivity implements View.OnClickListene
     static int SCAN_COUNTS = 7;
     private boolean isSpeak = true;
 
+    //git 测试
     @Override
     protected void onCreate(Bundle savedInstanceState) {
         super.onCreate(savedInstanceState);
@@ -224,12 +224,10 @@ public class MyActivity extends AppCompatActivity implements View.OnClickListene
 
     private void threadWrite(int row, boolean isError, String barcode) {
         mExecutorService.execute(new WriteRunnable(row, isError, barcode));
-        get();
+
     }
 
-    public void get(){
-        Log.e(TAG, "get: " );
-    }
+
 
     public class WriteRunnable implements Runnable {
         int row;
