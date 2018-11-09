@@ -77,7 +77,7 @@ public class MyActivity extends AppCompatActivity implements View.OnClickListene
     static int SCAN_COUNTS = 7;
     private boolean isSpeak = true;
 
-    //git 测试
+    //5558
     @Override
     protected void onCreate(Bundle savedInstanceState) {
         super.onCreate(savedInstanceState);
